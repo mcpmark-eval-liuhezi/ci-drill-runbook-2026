@@ -1,0 +1,12 @@
+name: Drill CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  fail-deliberately:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Intentionally fail this step
+        run: exit 1

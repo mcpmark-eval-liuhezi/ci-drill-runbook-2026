@@ -1,0 +1,11 @@
+name: Drill Soak
+
+on:
+  workflow_dispatch:
+
+jobs:
+  soak:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for ~20 minutes
+        run: sleep 1200
